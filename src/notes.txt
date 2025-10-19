@@ -1,0 +1,15 @@
+Drop down nav bar for mobile
+Do not forget to gitignore the node_modules
+
+I want to add a window into my more fun/hobby side when clicked
+
+Which projects to polish:
+    Task manager/remember app
+    The django typing game
+    The e commerce site
+    Maybe the social media one 
+    Create a new project with django/python back and react/js front and do the Figma design for this project 
+    Using viewport units is problematic 
+    Naming conventions are not good enough
+
+UNFORTUNATLEY MOST OF THIS WILL NEED TO BE REFACTORED. The beauty of learning.
