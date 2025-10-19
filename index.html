@@ -33,7 +33,7 @@
                     <p id="profile-bio" class="hidden sm:line-clamp-none sm:block text-black"> 
                         Hi, I’m Mark Schaefer, a passionate full-stack developer specializing in JavaScript, Python, and Django.
                         I create web applications that are clean, functional, and user-friendly. 
-                        I have experience building responsive interfaces, robust backends. 
+                        I have experience building responsive interfaces and robust backends. 
                         I have deployed a number of full-stack projects.
                     </p>
                     <button id="bio-button" class="btn-default p-2 text-[18px] mt-5 sm:p-0.5 sm:w-3xs sm:h-20 sm:mt-28">More about me</button>
@@ -55,12 +55,12 @@
             </div>
             <!-- Navbar in a column style -->
             <nav class="flex flex-col justify-center items-center gap-6 text-black">
-                <div>Home</div>
-                <div>About Me</div>
-                <div>Resume</div>
-                <div>Portfolio</div>
-                <div>Testimonials</div>
-                <div>Contacts</div>
+                <a href="#home"><div>Home</div></a>
+                <a href="#about-me-page"><div>About Me</div></a>
+                <a href="#resume-page"><div>Resume</div></a>
+                <a href="#portfolio-page"><div>Portfolio</div></a>
+                <a href="#"><div>Testimonials</div></a>
+                <a href="#contact-me-page"><div>Contacts</div></a>
             </nav>
         </header>
 
@@ -100,7 +100,7 @@
                         <div data-reveal-id="2" id="div-backend-dev" class="hidden about-me-reveal-hidden-info xl:block">
                             I design and implement robust server-side applications
                             with Python, Django, Node.js, 
-                            and databases, making sure data flows securely and efficiently.
+                            and SQL databases, making sure data flows securely and efficiently.
                         </div>
                     </div>
                     <img data-reveal-id="3" class="object-contain w-10 xl:w-20 about-me-images" src="./src/images/pencil.png" alt="Picture of a pencil ready for design">
@@ -139,7 +139,7 @@
                     Started the intro to CS course with zero prior experience with any type of code.
                     Solved challenges in C language and Python. Built multiple projects using Flask, SQlite, HTML, and CSS.
                     Developed multiple capstone projects including a activity tracker in Flask,
-                    a e commerce site in Django, 
+                    a e-commerce site in Django, 
                     a mock stock trading app in Flask, 
                     and a game in Django which included many interactive elements.
                 </div>
@@ -160,7 +160,7 @@
                 <div class="experience-resume-date" data-reveal-id="1">2020 - Current</div>
                 <div>Sports Coordinator and project manager</div>
                 <div class="hidden sm:block experience-resume-summary" data-reveal-id="1">Manage mulitple projects and contract staff.
-                    Managed the 7's tournaments. 
+                    Managed large scale tournaments/events. 
                 </div>
             </div>
             <div data-reveal-id="2" class="flex flex-col gap-1 p-2 experience-resume-container">
@@ -186,26 +186,35 @@
                 <li data-reveal-id="1" class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Web-Dev</li>
                 <li data-reveal-id="2" class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Art</li>
                 <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Front-end-design</li>
-                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Other</li>
+                <li data-reveal-id="4" class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Presenting</li>
             </ul>
         </div>
         <main class="flex flex-col gap-10">
             <div class="flex flex-row gap-10 justify-center portfolio-dropdown-menu">
-                <div id="web-dev-projects-heading" data-reveal-id="1" class="portfolio-dropdown-items">WEB DEVELOPMENT</div>
-                <div data-reveal-id="2" class="hidden sm:block portfolio-dropdown-items">ART</div>
-                <div class="hidden sm:block portfolio-dropdown-items">FRONT-END DESIGN</div>
-                <div class="hidden sm:block portfolio-dropdown-items">OTHER</div>
+                <div id="web-dev-projects-heading" data-reveal-id="1" class="portfolio-dropdown-items hover:cursor-pointer hover:bg-amber-400">WEB DEVELOPMENT</div>
+                <div data-reveal-id="2" class="hidden sm:block portfolio-dropdown-items hover:cursor-pointer hover:bg-amber-400">ART</div>
+                <div class="hidden sm:block portfolio-dropdown-items hover:cursor-pointer hover:bg-amber-400">FRONT-END DESIGN</div>
+                <div data-reveal-id="4" class="hidden sm:block portfolio-dropdown-items hover:cursor-pointer hover:bg-amber-400">PRESENTATION</div>
             </div>
             <div id="web-dev-projects-container" data-reveal-id="1" class="flex flex-col sm:grid grid-cols-2 gap-5 w-max mx-auto projects-containers">
-                <img class="w-30 h-25 object-contain sm:w-50 sm:h-auto" src="./src/images/gohan face.jpg" alt="Project name">
-                <img class="w-30 h-25 object-contain sm:w-50 sm:h-auto" src="./src/images/gohan face.jpg" alt="Project name">
-                <img class="w-30 h-25 object-contain sm:w-50 sm:h-auto" src="./src/images/gohan face.jpg" alt="Project name">
-                <img class="w-30 h-25 object-contain sm:w-50 sm:h-auto" src="./src/images/gohan face.jpg" alt="Project name">
+                <a href="https://github.com/MarkSchae/TypingGame.git" target="_blank"><img class="w-30 h-25 object-contain sm:w-50 sm:h-auto" src="./src/images/typing-game.png" alt="Typing game screenshot"></a>
+                <a href="https://github.com/MarkSchae/MARSCH25097_PTO2501_GroupA_MarkSchaefer_SDFPP.git" target="_blank"><img class="w-30 h-25 object-contain sm:w-50 sm:h-auto" src="./src/images/project-resume.png" alt="Resume project screenshot"></a>
+                <a href="https://github.com/MarkSchae/MARSCH25097_PTO2501_GroupA_MarkSchaefer_JSLPP.git" target="_blank"><img class="w-30 h-25 object-contain sm:w-50 sm:h-auto" src="./src/images/kanban.png" alt="Kanban Board"></a>
+                <a href="https://github.com/MarkSchae/pitch-challenge-ed-tech-app.git" target="_blank"><img class="w-30 h-25 object-contain sm:w-50 sm:h-auto" src="./src/images/language-learner.png" alt="Language learning adventure"></a>
             </div>
 
-            <div data-reveal-id="2" class="hidden flex flex-col gap-5 w-max mx-auto projects-containers">
-                <img class="w-30 h-25 object-contain sm:w-50" src="./src/images/gohan face.jpg" alt="Project name">
-                <img class="w-30 h-25 object-contain sm:w-50" src="./src/images/gohan face.jpg" alt="Project name">
+            <div data-reveal-id="2" class="hidden flex flex-col xl:flex-row gap-5 w-max mx-auto projects-containers">
+                <img class="w-30 h-25 object-contain sm:w-50 sm:h-30" src="./src/images/goblin2.jpg" alt="Cartoon goblin">
+                <img class="w-30 h-25 object-contain sm:w-50 sm:h-30" src="./src/images/goblin3.jpg" alt="Cartoon goblin">
+                <img class="w-30 h-25 object-contain sm:w-50 sm:h-30" src="./src/images/goblin4.jpg" alt="Cartoon goblin">
+                <img class="w-30 h-25 object-contain sm:w-50 sm:h-30" src="./src/images/goblin5.jpg" alt="Cartoon goblin">
+            </div>
+
+            <div data-reveal-id="4" class="hidden flex flex-col gap-5 w-max mx-auto projects-containers">
+                <a href="https://youtu.be/YkSOzcaiqNc" target="_blank"><img class="w-30 h-25 object-contain sm:w-50 sm:h-auto" src="./src/images/typing-game.png" alt="Typing game screenshot"></a>
+                <a href="https://drive.google.com/file/d/1joSTh_RR89_7WKPzKt_T2_nZf8rVrcWf/view" target="_blank"><img class="w-30 h-25 object-contain sm:w-50" src="./src/images/project-resume.png" alt="Resume project"></a>
+                <a href="https://drive.google.com/file/d/1ulDD3pHH0RkpHViLe_z7l4FzWmEzM6Na/view" target="_blank"><img class="w-30 h-25 object-contain sm:w-50" src="./src/images/kanban.png" alt="Kanban Board"></a>
+                <a href="https://drive.google.com/file/d/1YVlKfiI3X4b6scWuX0cOCFzXPyfZ84Fc/view?usp=drive_link" target="_blank"><img class="w-30 h-25 object-contain sm:w-50" src="./src/images/language-learner.png" alt="Language learning adventure"></a>
             </div>
         </main>
 
@@ -222,12 +231,12 @@
                 </div>
                 <!-- Navbar in a column style -->
                 <nav class="flex flex-col justify-center items-center gap-6 text-black">
-                    <div>Home</div>
-                    <div>About Me</div>
-                    <div>Resume</div>
-                    <div>Portfolio</div>
-                    <div>Testimonials</div>
-                    <div>Contacts</div>
+                    <a href="#home"><div>Home</div></a>
+                    <a href="#about-me-page"><div>About Me</div></a>
+                    <a href="#resume-page"><div>Resume</div></a>
+                    <a href="#portfolio-page"><div>Portfolio</div></a>
+                    <a href="#"><div>Testimonials</div></a>
+                    <a href="#contact-me-page"><div>Contacts</div></a>
                 </nav>
             </header>
 
@@ -235,15 +244,14 @@
                 <!-- Main content for the page -->
                 <div class="xl:text-9xl border-2 border-dotted p-2 border-black">CONTACT ME</div>
                 <div class="xl:text-5xl">FEEL FREE TO CONTACT ME</div>
-                <div>A sentence or two</div>
+                <div>A sentence or two (TBC)</div>
                 <div class="flex flex-row gap-5">
                     <div class="flex flex-col sm:flex-row gap-4">
                         <img class="sm:w-40 w-25 object-contain" src="./src/images/laptop-sketch.jpg" alt="Laptop">
                         <div class="flex flex-col">
-                            <a href="">Github</a>
-                            <a href="">Linkdin</a>
-                            <a href="">Codewars</a>
-                            <a href="">Email</a>
+                            <a href="https://github.com/MarkSchae" target="_blank">Github</a>
+                            <a href="https://www.linkedin.com/in/mark-schaefer-b5b35099/" target="_blank">Linkdin</a>
+                            <a href="mailto:mcschaefer26@gmail.com" target="_blank">Email</a>
                         </div>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-4">

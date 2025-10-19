@@ -233,6 +233,9 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
   }
+  .\!hidden {
+    display: none !important;
+  }
   .contents {
     display: contents;
   }
@@ -432,6 +435,20 @@
       --tw-shadow-color: color-mix(in oklab, var(--color-black) var(--tw-shadow-alpha), transparent);
     }
   }
+  .hover\:cursor-pointer {
+    &:hover {
+      @media (hover: hover) {
+        cursor: pointer;
+      }
+    }
+  }
+  .hover\:bg-amber-400 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-amber-400);
+      }
+    }
+  }
   .hover\:bg-gray-100 {
     &:hover {
       @media (hover: hover) {
@@ -475,6 +492,11 @@
   .sm\:h-20 {
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 20);
+    }
+  }
+  .sm\:h-30 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 30);
     }
   }
   .sm\:h-\[30vh\] {

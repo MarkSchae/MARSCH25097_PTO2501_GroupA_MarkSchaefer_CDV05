@@ -13,3 +13,5 @@ Which projects to polish:
     Naming conventions are not good enough
 
 UNFORTUNATLEY MOST OF THIS WILL NEED TO BE REFACTORED. The beauty of learning.
+
+Need to add a href to a page about my hobbies etc

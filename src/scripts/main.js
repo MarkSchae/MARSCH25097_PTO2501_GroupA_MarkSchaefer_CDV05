@@ -139,3 +139,27 @@ portfolioProjectCategories.forEach(category => category.addEventListener('click'
     }
     dropdownMenuProjects.classList.toggle('hidden');
 })); 
+
+function portfolioProjectPageSwitch (containerId) {
+    projectsContainers.forEach(project => {
+        if(containerId === project.dataset.revealId) {
+            if(project.classList.contains('hidden') || project.classList.contains('!hidden')) {
+                project.classList.remove('hidden');
+                project.classList.remove('!hidden');
+            }
+        }
+        if(containerId !== project.dataset.revealId) {
+            if(!project.classList.contains('hidden')) {
+                project.classList.add('!hidden');
+            }
+        }
+    });
+}
+
+dropdownItems.forEach(heading => heading.addEventListener('click', (event) => {
+    const headingId = event.target.dataset.revealId;
+    const screenSize = window.innerWidth;
+    if(screenSize > 1024) {
+        portfolioProjectPageSwitch(headingId);
+    }
+}));
