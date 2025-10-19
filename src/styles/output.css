@@ -12,6 +12,7 @@
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
+    --color-yellow-800: oklch(47.6% 0.114 61.907);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-stone-300: oklch(86.9% 0.005 56.366);
@@ -664,7 +665,7 @@
   padding: calc(var(--spacing) * 5);
   font-family: var(--font-serif);
   font-size: 16px;
-  color: var(--color-yellow-400);
+  color: var(--color-yellow-800);
 }
 .btn-default {
   cursor: pointer;

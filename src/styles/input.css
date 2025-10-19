@@ -5,7 +5,7 @@
 }
 
 .body-setup {
-    @apply flex flex-col gap-4 m-0 p-5 font-serif bg-stone-600 text-yellow-400 scroll-smooth text-[16px];
+    @apply flex flex-col gap-4 m-0 p-5 font-serif bg-stone-600 text-yellow-800 scroll-smooth text-[16px];
 }
 
 .btn-default {

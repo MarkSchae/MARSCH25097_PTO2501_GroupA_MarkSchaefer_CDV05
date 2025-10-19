@@ -22,7 +22,7 @@ function revealAboutMeInformationMobile (span) {
     // Link the relavent span elements to their respective more info divs
     // Reveal the more info div that links to the clicked div and hide the other elements, toggle behaviour
     //const aboutMeMobileSpanElements = document.querySelectorAll('.about-me-page-span');
-    console.log('run');
+    // Must remember the !hidden for mobile to add here or just refactor eventually
     aboutMeMobileDivElements.forEach(div => {
         if(span.dataset.revealId === div.dataset.revealId) {
             div.classList.toggle('hidden');
